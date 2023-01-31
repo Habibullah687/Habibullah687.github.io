@@ -4,10 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habibullah</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Välkommen till min hemsida!</h1>
+    
+    <form action="server.php" method="get">
+        <fieldset>
+            <legend> kontakuppgifter </legend>
+            <label for="fname">Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Namn här..."><br><br> 
+            <label for="fname">Ålder:</label>
+            <input type="number" id="ålder" placeholder="Ålder här...">
+    </fieldset>
+
+    <fieldset>
+        <legend> Din besök på blomstemålabladet</legend>
+        <p>Hur ofta besöker du blomstemålablade?</p>
+        <input type="radio" id="9jn" name="fav_language" value="Varj dag">
+        <label for="html">varje dag</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">varannan dag</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">varje vecka</label>
+
+        <p>Vilka delar av blomstemålablade brukar du besöka?</p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Nyheter</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> Utrikest</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Inrikest</label><br>
+        <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
+        <label for="vehicle4"> Sport</label><br>
+        <input type="checkbox" id="ee" name="vehicle5" value="Boat">
+        <label for="vehicle5"> Skvaller</label><br>
+        <input type="checkbox" id="ee" name="vehicle4" value="Boat">
+        <label for="vehicle4"> Väder</label><br>
+        <input type="checkbox" id="ee" name="vehicle4" value="Boat">
+        <label for="vehicle4"> Övrig</label><br>
+    </fieldset>
+
+    <fieldset>
+        <legend> Vinn en T-short!</legend>
+        <p> Ni har möjlighet att vinna en T-shirt om ni fyller i följande information:</p>
+        <p><label for="w3review">Bästa med blomstemålabladet</label><br>
+            <textarea ></textarea>
+            <br>
+            <p><label for="w3review">Sämsta med blomstemålabladet</label><br>
+            <textarea id="w3review" name="w3review" rows="2" cols="30"></textarea>
+            <br><br>
+            <label for="fname">Epost:</label>
+            <input type="text" id="fname" name="fname" placeholder="t.ex. anton@mah.se"><br><br>
+            <label for="cars">Storlek</label>
+            <select name="cars" id="cars">
+              <option value="volvo">XS</option>
+              <option value="saab">S</option>
+              <option value="opel">M</option>
+              <option value="audi">L</option>
+            </select>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Skicka/Återställ</legend>
+        <br>
+        <input type="submit" value="Skicka">
+        <input type="reset" value="Återställ formulär"> <br><br>
+    </fieldset>
+  
+
+   </form>
+    
 </body>
-<p>Hur är läget?</p>
 </html>
